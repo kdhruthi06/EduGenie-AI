@@ -5,14 +5,7 @@ EduGenie is an AI-powered educational assistant that helps students learn more e
 ## 📺 Demo Video
 
 > Add your demo video link here after recording.
-
-Example:
-
-https://github.com
-
-or
-
-[![Watch the Demo](https://img.shields.io/badge/Watch-Demo-blue)](YOUR_VIDEO_LINK)
+https://github.com/kdhruthi06/EduGenie-AI/blob/main/Video%20Project.mp4
 
 ---
 
