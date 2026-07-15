@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Learning Path Generator</h1>
+
+<form action="/learning" method="post">
+
+<input
+type="text"
+name="topic"
+placeholder="Enter topic"
+style="width:100%;padding:10px;"
+required>
+
+<br><br>
+
+<button type="submit">
+
+Generate Roadmap
+
+</button>
+
+</form>
+
+{% if response %}
+
+<hr>
+
+<h2>Learning Roadmap</h2>
+
+<pre>{{ response }}</pre>
+
+{% endif %}
+
+{% endblock %}

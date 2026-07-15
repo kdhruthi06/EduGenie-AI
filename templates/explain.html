@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Explain Concept</h1>
+
+<form action="/explain" method="post">
+
+<textarea
+name="concept"
+rows="6"
+style="width:100%;padding:10px;"
+placeholder="Enter a topic..."
+required></textarea>
+
+<br><br>
+
+<button type="submit">
+
+Explain
+
+</button>
+
+</form>
+
+{% if response %}
+
+<hr>
+
+<h2>Explanation</h2>
+
+<p>{{response}}</p>
+
+{% endif %}
+
+{% endblock %}

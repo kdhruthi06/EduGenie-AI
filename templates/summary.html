@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Text Summarizer</h1>
+
+<form action="/summary" method="post">
+
+<textarea
+name="text"
+rows="10"
+style="width:100%;padding:10px;"
+placeholder="Paste educational content..."
+required></textarea>
+
+<br><br>
+
+<button type="submit">
+
+Summarize
+
+</button>
+
+</form>
+
+{% if response %}
+
+<hr>
+
+<h2>Summary</h2>
+
+<p>{{ response }}</p>
+
+{% endif %}
+
+{% endblock %}

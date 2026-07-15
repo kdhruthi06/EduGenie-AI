@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Quiz Generator</h1>
+
+<form action="/quiz" method="post">
+
+<textarea
+name="topic"
+rows="5"
+style="width:100%;padding:10px;"
+placeholder="Enter topic..."
+required></textarea>
+
+<br><br>
+
+<button type="submit">
+
+Generate Quiz
+
+</button>
+
+</form>
+{% if error %}
+
+<div style="color:red;font-weight:bold;">
+
+{{ error }}
+
+</div>
+
+{% endif %}
+{% if quiz %}
+
+<hr>
+
+<h2>Generated Quiz</h2>
+
+{% for q in quiz %}
+
+<div class="quiz-card">
+
+    <h3>Q{{ loop.index }}. {{ q.question }}</h3>
+
+    {% for option in q.options %}
+
+    <label>
+
+        <input
+        type="radio"
+        name="q{{ loop.parent.loop.index }}"
+        value="{{ loop.index0 }}">
+
+        {{ option }}
+
+    </label>
+
+    <br><br>
+
+    {% endfor %}
+
+    <button
+    type="button"
+    onclick="checkAnswer(this, '{{ q.correct }}')">
+
+    Check Answer
+
+    </button>
+
+    <p class="result"></p>
+
+    <hr>
+
+</div>
+
+{% endfor %}
+
+{% endif %}
+
+{% endblock %}
