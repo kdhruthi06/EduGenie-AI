@@ -4,7 +4,6 @@ EduGenie is an AI-powered educational assistant that helps students learn more e
 
 ## 📺 Demo Video
 
-> Add your demo video link here after recording.
 https://github.com/kdhruthi06/EduGenie-AI/blob/main/Video%20Project.mp4
 
 ---
@@ -39,13 +38,13 @@ https://github.com/kdhruthi06/EduGenie-AI/blob/main/Video%20Project.mp4
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/EduGenie.git
+git clone https://github.com/kdhruthi06/EduGenie.git
 ```
 
 ### 2. Navigate to Project Folder
 
 ```bash
-cd EduGenie
+cd EduGenie-AI
 ```
 
 ### 3. Create Virtual Environment
